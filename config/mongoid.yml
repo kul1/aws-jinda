@@ -162,7 +162,9 @@ development:
 production:
   clients:
     default:
-      uri: <%= ENV['MONGODB_URI'] %>
+      database: aws263603_production
+      hosts:
+        - 172.31.29.5:27017
   options:
     raise_not_found_error: false
     belongs_to_required_by_default: false
