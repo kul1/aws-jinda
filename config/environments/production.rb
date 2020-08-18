@@ -1,10 +1,9 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.hosts << "jinda-877115729.us-east-2.elb.amazonaws.com"
-  config.hosts << "3.14.65.84"
-  # Code is not reloaded between requests.
+  # config.hosts << "jinda-877115729.us-east-2.elb.amazonaws.com"
+  # config.hosts << "3.14.65.84"
+  config.hosts.clear
   config.cache_classes = true
-
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.

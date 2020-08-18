@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   resources :password_resets
   resources :jinda, :only => [:index, :new]
   root :to => 'jinda#index'
+  get '/health_check', to: 'health_check#show'
   # api
   get '/api/v1/notes/my' => 'api/v1/notes#my'
   post '/api/v1/notes' => 'api/v1/notes#create', as: 'api_v1_notes'
